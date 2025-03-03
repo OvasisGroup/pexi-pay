@@ -8,7 +8,7 @@ export default function About() {
             <div className='max-w-7xl mx-auto '>
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
                 <div className=''>
-                    <Image src="/images/woman_shopping_image.png" alt="image" width={400} height={350} className='mt-8 md:-mt-15 px-5 md:px-0' />
+                    <Image src="/images/shopper-two.png" alt="image" width={600} height={350} className='mt-8 md:-mt-15 px-5 md:px-0' />
                 </div>
                 <div className='flex flex-col justify-center items-center text-white'>
                     <h1 className='text-4xl md:text-5xl font-bold text-center md:text-left  md:px-0 px-8 mb-4 mt-16'>We tap into modern payment methods that help your business grow.</h1>

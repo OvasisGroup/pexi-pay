@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function Header() {
   return (
-    <section className='bg-gradient-to-t from-mainaccent  to-mainprimary md:h-screen h-full w-full py-20 md:py-0'>
+    <section className='bg-gradient-to-t from-mainaccent  to-mainprimary md:h-screen h-auto w-full py-20 md:py-0'>
       
       <div className='grid md:grid-cols-2 gap-10 md:grid max-w-7xl mx-auto items-center justify-center h-full'>
         <div className='flex flex-col justify-center items-center'>
@@ -16,7 +16,12 @@ export default function Header() {
           </div>
         </div>
         <div className='flex justify-start items-bottom h-full relative hidden md:block'>
-          <Image src="/images/hero_image.png" alt="pexi-logo" width={600} height={100}
+          <Image src="/images/woman_shopping_image.png" alt="pexi-logo" width={500} height={100}
+            priority // Optional: Improves loading performance 
+
+            className="absolute bottom-0 h-auto w-full" data-aos="fade-up"
+          />
+          <Image src="/images/shopper.png" alt="pexi-logo" width={800} height={100}
             priority // Optional: Improves loading performance 
 
             className="absolute bottom-0 h-auto w-full" data-aos="fade-up"

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import {Fira_Sans} from "next/font/google";
 import "./globals.css";
 
+
+
 const geistSans = Fira_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],

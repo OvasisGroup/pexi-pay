@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Choose from "@/components/Choose";
 import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import NavigationBar from "@/components/Navbar";
@@ -14,6 +15,7 @@ export default function Home() {
         <Introduction/>
         <About/>
         <WhyChoose/>
+        <Choose/>
       </div>
     </section>
   );
