@@ -7,9 +7,9 @@
 
 @theme {
   --font-sans: "Fira Sans", sans-serif;
-  --color-primary: #0070f3;
-  --color-secondary: #0070f3;
-  --color-accent: #0070f3;
+  --color-mainprimary: #050123;
+  --color-mainsecondary: #ff0000;
+  --color-mainaccent: #340CD1;
 }
 
 :root {

@@ -19,7 +19,7 @@ const NavigationBar = () => {
     };
 
     return (
-        <nav className="bg-transparent dark:border-gray-700  top-0 left-0 right-0 z-10  absolute">
+        <nav className="bg-mainprimary  top-0 left-0 right-0 z-10 sticky">
             <div className="max-w-[90%] mx-auto">
                 <div className="flex justify-between h-16 items-center">
                     {/* Logo */}
