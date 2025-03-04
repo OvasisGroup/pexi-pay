@@ -30,6 +30,7 @@ export default function Subscription() {
           title: "Success!",
           description: "Successfully subscribed to our mailing list!",
           className: "bg-primary text-primary-foreground",
+          duration: 5000,
         });
         setEmail("");
       } else {
@@ -38,6 +39,7 @@ export default function Subscription() {
           description: data.error || "Failed to subscribe. Please try again.",
           variant: "destructive",
           className: "bg-destructive text-destructive-foreground",
+          duration: 5000,
         });
       }
     } catch (error) {
@@ -46,6 +48,7 @@ export default function Subscription() {
         description: "An error occurred. Please try again.",
         variant: "destructive",
         className: "bg-destructive text-destructive-foreground",
+        duration: 5000,
       });
     } finally {
       setIsLoading(false);
