@@ -1,9 +1,9 @@
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
-  host: process.env.MAIL_HOST!,
+  host: "smtp.zoho.com",
   port: 465,
-  secure: true, // Use true for port 465
+  secure: true,
   auth: {
     user: process.env.MAIL_USER!,
     pass: process.env.MAIL_PASSWORD!,
@@ -16,15 +16,12 @@ export const sendEmail = async (
   subject: string,
   text: string
 ) => {
-  console.log({
-    user: process.env.MAIL_USER!,
-    pass: process.env.MAIL_PASSWORD!,
-  });
   const html = buildHtml({ email, name, subject, message: text });
   try {
     const info = await transporter.sendMail({
-      from: process.env.SENDER,
-      subject,
+      from: process.env.MAIL_USER!,
+      to: process.env.MAIL_USER!,
+      subject: `New Contact Form Submission: ${subject}`,
       html,
       attachments: [],
     });
@@ -49,18 +46,25 @@ const buildHtml = (opts: {
   message: string;
 }) => {
   return `
-        <h2>${opts.subject}</h2>
-
-        <p>Dear <strong>PexiPay Team,</strong>,</p>
-        <p>Dear <strong> ${opts.name},</strong> Reached out to you via the contact form on your website.</p>
-        
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
+      <h2 style="color: #04097d;">${opts.subject}</h2>
+      
+      <p>Dear <strong>PexiPay Team</strong>,</p>
+      
+      <p><strong>${opts.name}</strong> has reached out via the contact form on your website.</p>
+      
+      <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 20px 0;">
+        <h3 style="color: #04097d; margin-top: 0;">Message Details:</h3>
+        <p><strong>From:</strong> ${opts.name}</p>
+        <p><strong>Email:</strong> ${opts.email}</p>
+        <p><strong>Subject:</strong> ${opts.subject}</p>
+        <p><strong>Message:</strong></p>
         <p>${opts.message}</p>
+      </div>
 
-        <h3 style="color: #0066cc;">Message</h3>
-        <p>${opts.message}</p>
-
-        <p>Warm regards,<br>
-        PEXI LABS<br>
-        info@pexipay.com</p>
-      `;
+      <p>Best regards,<br>
+      PEXI LABS<br>
+      <a href="mailto:info@pexipay.com" style="color: #04097d;">info@pexipay.com</a></p>
+    </div>
+  `;
 };

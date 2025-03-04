@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import {Fira_Sans} from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
-
-
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Fira_Sans({
   subsets: ["latin"],
@@ -10,8 +9,6 @@ const geistSans = Fira_Sans({
   display: "swap",
   variable: "--font-fira-sans",
 });
-
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable}  antialiased`}
-      >
+      <body className={`${geistSans.variable}  antialiased`}>
         {children}
+        <Toaster />
       </body>
     </html>
   );
