@@ -301,13 +301,15 @@ export default function ContactPage() {
                 <p className="text-red-500 text-sm mt-1">{errors.message}</p>
               )}
             </div>
-            <button
-              type="submit"
-              disabled={isLoading}
-              className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
-            >
-              {isLoading ? "Sending..." : "Get Started"}
-            </button>
+            <Link href="signin">
+              <button
+                type="submit"
+                disabled={isLoading}
+                className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isLoading ? "Sending..." : "Get Started"}
+              </button>
+            </Link>
           </form>
         </div>
       </div>
