@@ -13,12 +13,12 @@ export default function Choose() {
         <div className='p-6 border-2 rounded-2xl'>
         <Image src="/images/px2.jpg" alt="image" width={100} height={100} className='bg-black mb-4' />
             <h1 className='font-bold text-mainsecondary sm:text-2xl text-xl'>Fully secured</h1>
-            <p>Our API fully compliant with PCI DSS Level 1.</p>
+            <p>Our API fully compliant with PCI DSS Level 4.</p>
         </div>
         <div className='p-6 border-2 rounded-2xl'>
         <Image src="/images/px3.jpg" alt="image" width={100} height={100} className='bg-black mb-4' />
             <h1 className='font-bold text-mainsecondary sm:text-2xl text-xl'>Cost-efficient</h1>
-            <p>Safe time and money using our fully packed out of the box solution.</p>
+            <p>Save time and money using our fully packed out of the box solution.</p>
         </div>
         <div className='p-6 border-2 rounded-2xl'>
         <Image src="/images/px4.jpg" alt="image" width={100} height={100} className=' mb-4' />
