@@ -29,23 +29,45 @@ export default function Faq() {
     <div className='max-w-7xl mx-auto py-6 my-16 px-6 md:px-0'>
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
-        <AccordionTrigger>Is it accessible?</AccordionTrigger>
+        <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>What should I do if I become a victim of cybercrime?</AccordionTrigger>
         <AccordionContent>
-          Yes. It adheres to the WAI-ARIA design pattern.
+        First, if you believe you have fallen victim to cyber crime, file a complaint or report. Your information is invaluable to helping the FBI and its partners bring cybercriminals to justice. Second, get educated about the latest and most harmful cyber threats and scams.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-2">
-        <AccordionTrigger>Is it styled?</AccordionTrigger>
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>How can I protect my data from online threats?</AccordionTrigger>
         <AccordionContent>
-          Yes. It comes with default styles that matches the other
-          components&apos; aesthetic.
+        The author of this article is a world expert in cyber security. He has over 20 years of experience in this field and is the founder and CEO of CyberSecurity Solutions. He is also the author of several books on cybersecurity and network security.
         </AccordionContent>
       </AccordionItem>
       <AccordionItem value="item-3">
-        <AccordionTrigger>Is it animated?</AccordionTrigger>
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>How can I use social media safely?</AccordionTrigger>
         <AccordionContent>
-          Yes. Its animated by default, but you can disable it if you prefer.
+        Pick strong passwords and update them frequently. This can help protect against someone who may be trying to sign on to your account for negative reasons like posting spam, impersonating you, or stalking. In addition to choosing strong passwords and updating them, remember to keep your passwords in a secure location.
         </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-4">
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>What is two-factor authentication and why is it necessary?</AccordionTrigger>
+        <AccordionContent>
+        Two-factor authentication (2FA), sometimes referred to as two-step verification or dual-factor authentication, is a security process in which users provide two different authentication factors to verify themselves. 2FA is implemented to better protect both a users credentials and the resources the user can access.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-5">
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>How can I protect my data from online threats?</AccordionTrigger>
+        <AccordionContent>
+        The author of this article is a world expert in cyber security. He has over 20 years of experience in this field and is the founder and CEO of CyberSecurity Solutions. He is also the author of several books on cybersecurity and network security.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-6">
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>How can I protect my computer from viruses and other malware?</AccordionTrigger>
+        <AccordionContent>
+        Removing a computer virus or spyware can be difficult without the help of malicious software removal tools. Some computer viruses and other unwanted software reinstall themselves after the viruses and spyware are detected and removed. Fortunately, by updating the computer and by using malicious software removal tools, you can help permanently remove unwanted software.
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem value="item-7">
+      <AccordionTrigger className='text-mainblue hover:text-mainsecondary font-bold text-xl'>What is cybersecurity?</AccordionTrigger>
+        <AccordionContent>
+        Cybersecurity is the practice of protecting internet-connected systems such as hardware, software and data from cyberthreats. Its used by individuals and enterprises to protect against unauthorized access to data centers and other computerized systems.        </AccordionContent>
       </AccordionItem>
     </Accordion>
     </div>
