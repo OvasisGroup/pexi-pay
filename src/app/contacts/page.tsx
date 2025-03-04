@@ -306,7 +306,7 @@ export default function ContactPage() {
               disabled={isLoading}
               className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isLoading ? "Sending..." : "Get Started"}
+              {isLoading ? "Sending..." : "Contact Us"}
             </button>
           </form>
         </div>
