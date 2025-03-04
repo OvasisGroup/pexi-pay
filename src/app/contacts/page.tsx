@@ -216,7 +216,7 @@ export default function ContactPage() {
             help you accept global debit and credit card payments for all card
             brands and local payment methods.{" "}
           </p>
-          <p className="mt-10">info@pexipaycom</p>
+          <p className="mt-10">info@pexipay.com</p>
           <p>For any questions</p>
         </div>
         <div className="flex flex-col items-center md:flex md:items-start mt-4 gap-4">
