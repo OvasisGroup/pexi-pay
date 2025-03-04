@@ -4,7 +4,7 @@ import { Button } from './ui/button'
 
 export default function About() {
     return (
-        <section className='bg-gradient-to-t from-mainaccent  to-mainprimary mb-6'>
+        <section className='bg-gradient-to-t from-mainaccent  to-mainprimary mt-6'>
             <div className='max-w-7xl mx-auto '>
             <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
                 <div className=''>

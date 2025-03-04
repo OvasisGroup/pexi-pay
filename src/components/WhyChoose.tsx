@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 export default function WhyChoose() {
     return (
+        <section className='bg-gray-200 py-6'>
         <section className='max-w-7xl mx-auto py-6'>
             <div className='md:grid-cols-[.75fr_3.25fr] gap-4 md:grid md:gap-10'>
                 <div className='flex justify-start md:justify-center md:items-center items-start md:items-start text-left md:text-center px-6'>
@@ -16,6 +17,7 @@ export default function WhyChoose() {
                     <p className=' px-6 md:px-0 md:text-xl'>We collaborate and have negotiated the best rates for you with mobile networks, banks, and money transfer operators, enabling you to collect and be settled seamlessly and flexibly.</p>
                     </div>
             </div>
+        </section>
         </section>
     )
 }
