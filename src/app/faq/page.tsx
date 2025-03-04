@@ -15,7 +15,10 @@ export default function Faq() {
   return (
     <section>
         <NavigationBar/>
-        <Image src="/images/pexi.svg" alt="image" width={50} height={50} className="mb-6" />
+        <div className='relative w-full h-60 bg-[url("/images/faq.png")] bg-cover bg-center bg-no-repeat'>
+        
+        </div>
+       
     <div className='max-w-7xl mx-auto py-6 my-16 px-6 md:px-0'>
     <Accordion type="single" collapsible className="w-full">
       <AccordionItem value="item-1">
