@@ -4,21 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Signin() {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  });
+export default function ForgotPassword() {
+  const [email, setEmail] = useState("");
   const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState("");
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,11 +15,11 @@ export default function Signin() {
 
     try {
       // Here you would typically make an API call to your backend
-      // For now, we'll just simulate a successful signin
+      // For now, we'll just simulate a successful password reset request
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setShowSuccess(true);
     } catch (err) {
-      setError("Invalid email or password. Please try again.");
+      setError("Failed to send reset instructions. Please try again.");
     }
   };
 
@@ -38,15 +27,15 @@ export default function Signin() {
     return (
       <section className="bg-gradient-to-t from-mainaccent to-mainprimary min-h-screen w-full flex items-center justify-center">
         <div className="w-full max-w-md px-4 text-center">
-          <h1 className="font-bold text-white text-2xl">Coming Soon!</h1>
+          <h1 className="font-bold text-white text-2xl">Check Your Email</h1>
           <p className="text-white text-lg mt-2">
-            Thank you for your interest. We're working on something amazing!
+            We've sent password reset instructions to your email address.
           </p>
           <Link
-            href="/"
+            href="/signin"
             className="mt-4 inline-block px-6 py-2 bg-mainsecondary text-white rounded-md hover:bg-red-700 transition-colors"
           >
-            Back to Home
+            Back to Sign In
           </Link>
         </div>
       </section>
@@ -87,7 +76,11 @@ export default function Signin() {
               priority
             />
           </Link>
-          <h1 className="font-bold text-white text-2xl">Sign In</h1>
+          <h1 className="font-bold text-white text-2xl">Reset Password</h1>
+          <p className="text-white text-center text-sm">
+            Enter your email address and we'll send you instructions to reset
+            your password.
+          </p>
           {error && (
             <div className="w-full p-3 bg-red-100 border border-red-400 text-red-700 rounded">
               {error}
@@ -96,41 +89,23 @@ export default function Signin() {
           <form onSubmit={handleSubmit} className="w-full space-y-4">
             <input
               type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="Email Address"
               required
               className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
             />
-            <input
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-              placeholder="Password"
-              required
-              className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
-            />
-            <div className="flex justify-end">
-              <Link
-                href="/forgot-password"
-                className="text-mainsecondary text-sm hover:underline"
-              >
-                Forgot Password?
-              </Link>
-            </div>
             <button
               type="submit"
               className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer"
             >
-              Sign In
+              Send Reset Instructions
             </button>
           </form>
           <p className="text-white text-sm">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-mainsecondary hover:underline">
-              Sign Up
+            Remember your password?{" "}
+            <Link href="/signin" className="text-mainsecondary hover:underline">
+              Sign In
             </Link>
           </p>
         </div>

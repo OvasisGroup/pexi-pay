@@ -4,10 +4,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Signin() {
+export default function ResetPassword() {
   const [formData, setFormData] = useState({
-    email: "",
-    password: "",
+    newPassword: "",
+    confirmPassword: "",
   });
   const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -24,13 +24,24 @@ export default function Signin() {
     e.preventDefault();
     setError("");
 
+    // Basic validation
+    if (formData.newPassword !== formData.confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+
+    if (formData.newPassword.length < 8) {
+      setError("Password must be at least 8 characters long");
+      return;
+    }
+
     try {
       // Here you would typically make an API call to your backend
-      // For now, we'll just simulate a successful signin
+      // For now, we'll just simulate a successful password reset
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setShowSuccess(true);
     } catch (err) {
-      setError("Invalid email or password. Please try again.");
+      setError("Failed to reset password. Please try again.");
     }
   };
 
@@ -38,15 +49,18 @@ export default function Signin() {
     return (
       <section className="bg-gradient-to-t from-mainaccent to-mainprimary min-h-screen w-full flex items-center justify-center">
         <div className="w-full max-w-md px-4 text-center">
-          <h1 className="font-bold text-white text-2xl">Coming Soon!</h1>
+          <h1 className="font-bold text-white text-2xl">
+            Password Reset Successful!
+          </h1>
           <p className="text-white text-lg mt-2">
-            Thank you for your interest. We're working on something amazing!
+            Your password has been successfully reset. You can now sign in with
+            your new password.
           </p>
           <Link
-            href="/"
+            href="/signin"
             className="mt-4 inline-block px-6 py-2 bg-mainsecondary text-white rounded-md hover:bg-red-700 transition-colors"
           >
-            Back to Home
+            Sign In
           </Link>
         </div>
       </section>
@@ -87,7 +101,10 @@ export default function Signin() {
               priority
             />
           </Link>
-          <h1 className="font-bold text-white text-2xl">Sign In</h1>
+          <h1 className="font-bold text-white text-2xl">Set New Password</h1>
+          <p className="text-white text-center text-sm">
+            Please enter your new password below.
+          </p>
           {error && (
             <div className="w-full p-3 bg-red-100 border border-red-400 text-red-700 rounded">
               {error}
@@ -95,42 +112,34 @@ export default function Signin() {
           )}
           <form onSubmit={handleSubmit} className="w-full space-y-4">
             <input
-              type="email"
-              name="email"
-              value={formData.email}
+              type="password"
+              name="newPassword"
+              value={formData.newPassword}
               onChange={handleChange}
-              placeholder="Email Address"
+              placeholder="New Password"
               required
               className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
             />
             <input
               type="password"
-              name="password"
-              value={formData.password}
+              name="confirmPassword"
+              value={formData.confirmPassword}
               onChange={handleChange}
-              placeholder="Password"
+              placeholder="Confirm New Password"
               required
               className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
             />
-            <div className="flex justify-end">
-              <Link
-                href="/forgot-password"
-                className="text-mainsecondary text-sm hover:underline"
-              >
-                Forgot Password?
-              </Link>
-            </div>
             <button
               type="submit"
               className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer"
             >
-              Sign In
+              Reset Password
             </button>
           </form>
           <p className="text-white text-sm">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-mainsecondary hover:underline">
-              Sign Up
+            Remember your password?{" "}
+            <Link href="/signin" className="text-mainsecondary hover:underline">
+              Sign In
             </Link>
           </p>
         </div>
