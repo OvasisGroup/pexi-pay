@@ -1,45 +1,54 @@
 import React from 'react'
-import Image from "next/image";
+// import Image from "next/image";
+import { RiSecurePaymentLine } from "react-icons/ri";
+import { GrGamepad } from "react-icons/gr";
+import { MdOutlinePayments } from "react-icons/md";
+import { BsBank } from "react-icons/bs";
+import { MdOutlineAnalytics } from "react-icons/md";
+import { AiOutlineTransaction } from "react-icons/ai";
+import { GoShieldCheck } from "react-icons/go";
+import { VscServerProcess } from "react-icons/vsc";
+
 
 const teamMembers = [
     {
         name: "Payment Gateway",
-        image: "/images/SVG/payment_gateway.svg",
+        image: <RiSecurePaymentLine  size={60} className='text-mainsecondary' />,
         description: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
     },
     {
-        name: "Payment processing for iGaming",
-        image: "/images/SVG/igaming.svg",
+        name: "High Risk Credit Card processing",
+        image: <VscServerProcess size={60} className='text-mainsecondary' />,
         description: "Experienced full-stack developer building modern web apps and blockchain solutions.",
     },
     {
         name: "Alternative payments methods",
-        image: "/images/pavin.png",
+        image: <MdOutlinePayments size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
         name: "Open Banking",
-        image: "/images/pavin.png",
+        image: <BsBank size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
         name: "Real – time reporting & Analytics",
-        image: "/images/pavin.png",
+        image: <MdOutlineAnalytics size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
         name: "Smart transaction Routing",
-        image: "/images/pavin.png",
+        image: <AiOutlineTransaction size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
         name: "Fraud & Chargeback prevention",
-        image: "/images/pavin.png",
+        image: <GoShieldCheck size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
         name: "Payment processing for iGaming",
-        image: "/images/pavin.png",
+        image: <GrGamepad size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     
@@ -52,19 +61,13 @@ export default function Introduction() {
             <div className='flex-cols gap-y-10 gap-x-8 py-16 md:grid'>
                 <div className='flex flex-col justify-center items-center md:items-start text-center md:text-left'>
                     <small className='text-mainsecondary font-bold text-xl'>PEXIPAY KEY FEATURES</small>
-                    <h1 className='font-bold text-mainblue text-4xl my-3'>We deliver outstanding results while streamlining your processes.</h1>
-                    <p>We deliver outstanding results while streamlining your processes. Our goal is to maximize efficiency and ensure you achieve the best outcomes with minimal effort and expense.</p>
+                    <h1 className='font-bold text-mainblue text-4xl my-3 px-6 md:px-0'>We deliver outstanding results while streamlining your processes.</h1>
+                    <p className='px-6 md:px-0'>We deliver outstanding results while streamlining your processes. Our goal is to maximize efficiency and ensure you achieve the best outcomes with minimal effort and expense.</p>
                 </div>
-                <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4'>
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 p-6 md:p-0'>
                 {teamMembers.map((member, index) => (
-                        <div key={index} className="bg-maingrey rounded-lg  flex flex-col justify-center items-center min-h-60 p-10 text-center">
-                            <Image
-                                src={member.image}
-                                alt={member.name}
-                                width={80}
-                                height={80}
-                                className="mx-auto"
-                            />
+                        <div key={index} className="bg-maingrey rounded-lg hover:bg-mainblue transition-colors hover:text-white flex flex-col justify-center items-center min-h-60 p-10 text-center">
+                            <div>{member.image}</div>
                             <p className="text-xl font-semibold mt-4">{member.name}</p>
                         </div>
                     ))}
