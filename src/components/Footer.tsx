@@ -13,7 +13,7 @@ export default function Footer() {
         <p>Privacy Policy</p>
         <p>Terms & Conditions</p>
         <Link href={'https://www.linkedin.com/company/pexipay'}><FaLinkedin size={24} className='text-mainblue' /></Link>
-        <Link href={'https://twitter.com/pexipay'}><FaSquareTwitter size={24} className='text-mainblue'  /></Link>
+        <Link href={'https://x.com/PexiLabs'}><FaSquareTwitter size={24} className='text-mainblue'  /></Link>
         </div>
     </div>
     </section>
