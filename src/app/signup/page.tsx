@@ -4,15 +4,22 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Signin() {
+export default function Signup() {
   const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
     email: "",
+    phone: "",
+    accountType: "",
     password: "",
+    confirmPassword: "",
   });
   const [showSuccess, setShowSuccess] = useState(false);
   const [error, setError] = useState("");
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -24,13 +31,24 @@ export default function Signin() {
     e.preventDefault();
     setError("");
 
+    // Basic validation
+    if (formData.password !== formData.confirmPassword) {
+      setError("Passwords do not match");
+      return;
+    }
+
+    if (formData.password.length < 8) {
+      setError("Password must be at least 8 characters long");
+      return;
+    }
+
     try {
       // Here you would typically make an API call to your backend
-      // For now, we'll just simulate a successful signin
+      // For now, we'll just simulate a successful signup
       await new Promise((resolve) => setTimeout(resolve, 1000));
       setShowSuccess(true);
     } catch (err) {
-      setError("Invalid email or password. Please try again.");
+      setError("Failed to create account. Please try again.");
     }
   };
 
@@ -43,10 +61,10 @@ export default function Signin() {
             Thank you for your interest. We're working on something amazing!
           </p>
           <Link
-            href="/"
+            href="/signin"
             className="mt-4 inline-block px-6 py-2 bg-mainsecondary text-white rounded-md hover:bg-red-700 transition-colors"
           >
-            Back to Home
+            Back to Sign In
           </Link>
         </div>
       </section>
@@ -87,13 +105,33 @@ export default function Signin() {
               priority
             />
           </Link>
-          <h1 className="font-bold text-white text-2xl">Sign In</h1>
+          <h1 className="font-bold text-white text-2xl">Create Account</h1>
           {error && (
             <div className="w-full p-3 bg-red-100 border border-red-400 text-red-700 rounded">
               {error}
             </div>
           )}
           <form onSubmit={handleSubmit} className="w-full space-y-4">
+            <div className="grid grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="firstName"
+                value={formData.firstName}
+                onChange={handleChange}
+                placeholder="First Name"
+                required
+                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+              />
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                placeholder="Last Name"
+                required
+                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+              />
+            </div>
             <input
               type="email"
               name="email"
@@ -104,6 +142,26 @@ export default function Signin() {
               className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
             />
             <input
+              type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              placeholder="Phone Number"
+              required
+              className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+            />
+            <select
+              name="accountType"
+              value={formData.accountType}
+              onChange={handleChange}
+              required
+              className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+            >
+              <option value="">Select Account Type</option>
+              <option value="merchant">Merchant</option>
+              <option value="individual">Individual</option>
+            </select>
+            <input
               type="password"
               name="password"
               value={formData.password}
@@ -112,25 +170,26 @@ export default function Signin() {
               required
               className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
             />
-            <div className="flex justify-end">
-              <Link
-                href="/forgot-password"
-                className="text-mainsecondary text-sm hover:underline"
-              >
-                Forgot Password?
-              </Link>
-            </div>
+            <input
+              type="password"
+              name="confirmPassword"
+              value={formData.confirmPassword}
+              onChange={handleChange}
+              placeholder="Confirm Password"
+              required
+              className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+            />
             <button
               type="submit"
               className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer"
             >
-              Sign In
+              Create Account
             </button>
           </form>
           <p className="text-white text-sm">
-            Don't have an account?{" "}
-            <Link href="/signup" className="text-mainsecondary hover:underline">
-              Sign Up
+            Already have an account?{" "}
+            <Link href="/signin" className="text-mainsecondary hover:underline">
+              Sign In
             </Link>
           </p>
         </div>
