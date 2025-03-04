@@ -39,17 +39,15 @@ const NavigationBar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-6 items-center text-white">
-                        <Link href="/" className="text-maingreen dark:text-white hover:text-black font-semibold">
-                            Home
+                        <Link href="/" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                            Payment Gateway
                         </Link>
-                        <Link href="/about" className="text-maingreen dark:text-white hover:text-black font-semibold">
-                            Jobs
+                        <Link href="/about" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                            About
                         </Link>
-                        <Link href="/services" className="text-maingreen dark:text-white hover:text-black font-semibold">
-                            Services
-                        </Link>
-                        <Link href="/contact" className="text-maingreen dark:text-white hover:text-black font-semibold">
-                            Premium
+        
+                        <Link href="/contact" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                            Contact Us
                         </Link>
 
                        
@@ -62,13 +60,28 @@ const NavigationBar = () => {
                                     <ChevronDown size={16} className="text-white dark:text-white" />
                                 </button>
                                 {profileOpen && (
-                                    <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-lg">
-                                        <Link href="/profile" className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-black">
-                                            <User size={16} className="mr-2 text-black" /> Profile
-                                        </Link>
-                                        <Link href="/settings" className="flex items-center px-4 py-2 hover:bg-gray-200 dark:hover:bg-gray-700 text-black">
-                                            <Settings size={16} className="mr-2" /> Settings
-                                        </Link>
+                                    <div className="absolute right-0  p-10 mt-2 w-120 bg-white dark:bg-gray-800 border dark:border-gray-700 rounded-lg shadow-lg">
+                                        <Link href="/" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    High-Risk Credit Card processing
+                    </Link>
+                    <Link href="/about" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Open Banking
+                    </Link>
+                    <Link href="/services" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Alternative payments methods
+                    </Link>
+                    <Link href="/services" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Real – time reporting & Analytics
+                    </Link>
+                    <Link href="/services" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Smart transaction Routing
+                    </Link>
+                    <Link href="/services" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Payment processing for iGaming
+                    </Link>
+                    <Link href="/services" className="block text-gray-800 dark:text-white hover:text-red-700 hover:font-bold border-b-2 py-2">
+                    Fraud & Chargeback Prevention
+                    </Link>
                                        
                                     </div>
                                 )}
@@ -91,16 +104,13 @@ const NavigationBar = () => {
             {isOpen && (
                 <div className="md:hidden bg-white dark:bg-gray-900 p-4 space-y-2 shadow-md">
                     <Link href="/" className="block text-gray-800 dark:text-white hover:text-blue-500">
-                        Home
+                        Payment Gateway
                     </Link>
                     <Link href="/about" className="block text-gray-800 dark:text-white hover:text-blue-500">
                         About
                     </Link>
                     <Link href="/services" className="block text-gray-800 dark:text-white hover:text-blue-500">
-                        Services
-                    </Link>
-                    <Link href="/contact" className="block text-gray-800 dark:text-white hover:text-blue-500">
-                        Contact
+                        Contact Us
                     </Link>
 
                     {/* Language Dropdown for Mobile */}
@@ -111,13 +121,25 @@ const NavigationBar = () => {
                         {langOpen && (
                             <div className="pl-4">
                                 <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("en")}>
-                                    English
+                                <ChevronDown size={16} className="ml-1 inline" />High-Risk Credit Card processing
                                 </button>
                                 <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("fr")}>
-                                    French
+                                Open Banking
                                 </button>
                                 <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("es")}>
-                                    Spanish
+                                Alternative payments methods
+                                </button>
+                                <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("es")}>
+                                Real – time reporting & Analytics
+                                </button>
+                                <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("es")}>
+                                Smart transaction Routing
+                                </button>
+                                <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("es")}>
+                                Payment processing for iGaming
+                                </button>
+                                <button className="block text-gray-800 dark:text-white hover:text-blue-500 w-full text-left" onClick={() => changeLanguage("es")}>
+                                Fraud & Chargeback Prevention
                                 </button>
                             </div>
                         )}
