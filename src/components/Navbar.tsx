@@ -45,7 +45,9 @@ const NavigationBar = () => {
                         <Link href="/about" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
                             About
                         </Link>
-
+                        <Link href="/team" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                            Team
+                        </Link>
                         <Link href="/contacts" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
                             Contact Us
                         </Link>
