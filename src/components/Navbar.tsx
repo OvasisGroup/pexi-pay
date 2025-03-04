@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X, ChevronDown, Settings, User } from "lucide-react";
+import { Menu, X, ChevronDown} from "lucide-react";
 import Link from "next/link";
 // import { useRouter } from "next/router";
 import Image from "next/image";
