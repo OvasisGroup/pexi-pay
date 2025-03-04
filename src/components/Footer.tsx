@@ -8,7 +8,12 @@ export default function Footer() {
     <section className="py-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 px-6 md:px-0">
         <div>
-          <p>© 2025 PEXIPAY. All rights reserved.</p>
+          <p>
+            © 2025 PEXIPAY. All rights reserved, Powered by{" "}
+            <Link href="https://www.pexipay.com" className="text-mainsecondary">
+              PEXI LABS
+            </Link>
+          </p>
         </div>
         <div className="flex flex-row items-end md:justify-end gap-4">
           <Link
