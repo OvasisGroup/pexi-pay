@@ -17,7 +17,7 @@ const teamMembers = [
         description: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
     },
     {
-        name: "High Risk Credit Card processing",
+        name: "Card processing",
         image: <VscServerProcess size={60} className='text-mainsecondary' />,
         description: "Experienced full-stack developer building modern web apps and blockchain solutions.",
     },
@@ -47,7 +47,7 @@ const teamMembers = [
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },
     {
-        name: "Payment processing for iGaming",
+        name: "Payment processing for online businesses",
         image: <GrGamepad size={60} className='text-mainsecondary' />,
         description: "Blockchain Dev, Full-time Degen with hands-on experience in decentralized finance and cryptocurrency.",
     },

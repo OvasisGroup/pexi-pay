@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Introduction from "@/components/Introduction";
 import MainFooter from "@/components/MainFooter";
 import NavigationBar from "@/components/Navbar";
+import CurrencyCarousel from "@/components/Partners";
 import Subscription from "@/components/Subscription";
 import WhyChoose from "@/components/WhyChoose";
 
@@ -20,6 +21,7 @@ export default function Home() {
         <WhyChoose/>
         <Choose/>
         <Subscription/>
+        <CurrencyCarousel/>
         <MainFooter/>
         <Footer/>
       </div>
