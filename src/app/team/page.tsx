@@ -16,7 +16,7 @@ const teamMembers = [
         name: "Dauglous Omambia",
         image: "/images/douglus.jpg",
         position: "Chief Technology Officer, Pexi Labs Limited",
-        description: "Douglas is a seasoned fintech leader and the CEO of Pexi Labs Limited, a dynamic payment gateway company dedicated to redefining digital transactions. Backed by a team with deep expertise in the payments industry, Pexi Labs brings innovative, secure, and scalable payment solutions to businesses of all sizes. With vast experience in tech management, Paul has been instrumental in driving technology-driven growth, optimizing operations, and leading high-performing teams in the digital payments space. As a player in the digital payments space, Pexi Labs, foundation is built on industry expertise and a commitment to delivering seamless and reliable payment solutions. Under Paul’s leadership, the company is focused on leveraging cutting-edge technology, fostering strategic partnerships, and ensuring financial inclusion through innovative digital payment systems.",
+        description: "Dauglous is a technology leader specializing in Web3 and digital payments. As the CTO of Pexi Labs Limited, he designs and implements secure, scalable, and compliant payment solutions, ensuring seamless integration between backend systems, smart contracts, and frontend applications. With expertise in fintech and blockchain, Dauglous has led the development of Pexi Labs’ Web3 architecture, built and managed high-performing engineering teams, and overseen product execution. He is currently spearheading the creation of a PCI DSS-compliant payment gateway, reinforcing security and compliance in digital transactions. Under his leadership, Pexi Labs is leveraging cutting-edge technology to redefine payment processing, drive financial inclusion, and shape the future of digital transactions.",
     },
     {
         name: "Erick Ayara",
@@ -28,7 +28,7 @@ const teamMembers = [
         name: "Faith Awuor ",
         image: "/images/faith.jpg",
         position: "Marketing Lead, Pexi Labs Limited",
-        description: "A focused, dedicated and result oriented payments professional, with a 360 grasp of the dynamic realms of low risk,mid risk and high risk payments. I have hinged my experience in e commerce, forex,betting,Gambling and Igaming. Having had a back ground in remittance I understand and are conversant , able to navigate the complexities of the regulatory landscapes, I have built Payin and Payout models around Banks, Mobile Wallets, Crypto Exchanges, and refining that down to APMs in Africa,Asia,Latam, Europe."
+        description: "A focused, dedicated and result oriented payments professional, with a 360 grasp of the dynamic realms of low risk,mid risk and high risk payments. I have hinged my experience in e commerce, forex,betting,Gambling and Igaming. Having had a back ground in remittance I understand and are conversant , able to navigate the complexities of the regulatory landscapes, I have built Payin and Payout models around Banks, Mobile Wallets, and refining that down to APMs in Africa,Asia,Latam, Europe."
     },
 
 ];
