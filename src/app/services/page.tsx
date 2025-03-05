@@ -24,10 +24,6 @@ const services = [
                 body: "Support M-Pesa, PayPal, Apple Pay, Google Pay, etc."
             },
             {
-                title: "Crypto Payments:",
-                body: "Allow payments in BTC, ETH, USDT, and other cryptocurrencies."
-            },
-            {
                 title: "Recurring Payments:",
                 body: "Enable subscription billing with automated payments."
             },
@@ -136,7 +132,7 @@ export default function Services() {
             <div className='relative w-full h-100 bg-[url("/images/faq.png")] bg-cover bg-center bg-no-repeat'>
                 <div className='flex flex-col justify-center items-center h-full'>
                     <h1 className='font-bold text-mainsecondary md:text-4xl text-3xl mb-6'>Our Services</h1>
-                    <h1 className='md:text-3xl text-2xl px-6 text-white md:max-w-200 text-center font-thin'>Building a payment processing gateway requires multiple services to ensure security, reliability, and compliance. Here are the key services you should include:</h1>
+                    <h1 className='md:text-3xl text-2xl px-6 text-white md:max-w-200 text-center font-thin'>Building a payment processing gateway requires multiple services to ensure security, reliability, and compliance. </h1>
                 </div>
             </div>
             <div className='grid md:grid-cols-2 gap-6 max-w-7xl mx-auto mt-15 mb-20'>
