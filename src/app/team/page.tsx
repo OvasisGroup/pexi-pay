@@ -27,7 +27,7 @@ const teamMembers = [
     {
         name: "Faith Awuor ",
         image: "/images/faith.jpg",
-        position: "Marekting Lead",
+        position: "Marketing Lead, Pexi Labs Limited",
         description: "A focused, dedicated and result oriented payments professional, with a 360 grasp of the dynamic realms of low risk,mid risk and high risk payments. I have hinged my experience in e commerce, forex,betting,Gambling and Igaming. Having had a back ground in remittance I understand and are conversant , able to navigate the complexities of the regulatory landscapes, I have built Payin and Payout models around Banks, Mobile Wallets, Crypto Exchanges, and refining that down to APMs in Africa,Asia,Latam, Europe."
     },
 
@@ -45,27 +45,31 @@ export default function Team() {
             </div>
             <div className='grid md:grid-cols-2 gap-6 max-w-7xl mx-auto mt-20'>
                 {teamMembers.map((member, index) => (
-                    <div key={index} className="border-2 p-6 rounded-lg">
-                        <div className='flex md:flex-row flex-col justify-between items-center' >
+                    <div key={index} className="border-1 p-6 rounded-lg mx-6 md:mx-0">
+                        <div className='flex md:flex-row flex-col gap-6 justify-between md:items-center items-start' >
                             <div>
                                 <Image
                                     src={member.image}
                                     alt={member.name}
-                                    width={200}
-                                    height={200}
+                                    width={180}
+                                    height={180}
                                     className="mx-auto rounded-full"
                                 />
                             </div>
                             <div>
-                                <p className="text-xl font-semibold mt-4">{member.name}</p>
-                                <p className="text-sm">{member.position}</p>
+                                <p className="text-xl font-semibold mt-4 md:text-right text-left pr-4 ">{member.name}</p>
+                                <p className="text-sm font-semibold text-mainsecondary pr-4 text-left md:text-right">{member.position}</p>
                             </div>
                         </div>
-                        <p className='mt-4 text-sm'>{member.description}</p>
+                        <p className='mt-6 text-sm'>{member.description}</p>
                     </div>
                 ))}
             </div>
-            <Choose />
+            <div className='max-w-7xl mx-auto  px-6 md:px-0'>
+            <h1 className='mt-6 -mb-15 font-bold text-3xl'>Why Choose PexiPay?</h1>
+            </div>
+            
+            <Choose/>
             <MainFooter />
             <Footer />
         </section>
