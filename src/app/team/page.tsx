@@ -3,6 +3,31 @@ import Footer from '@/components/Footer'
 import MainFooter from '@/components/MainFooter'
 import NavigationBar from '@/components/Navbar'
 import React from 'react'
+import Image from "next/image";
+
+const teamMembers = [
+    {
+        name: "Payment Gateway",
+        image: "/images/paul.jpg",
+        position: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
+    },
+    {
+        name: "Payment Gateway",
+        image: "/images/douglus.jpg",
+        position: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
+    },
+    {
+        name: "Payment Gateway",
+        image: "/images/erick.jpg",
+        position: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
+    },
+    {
+        name: "Payment Gateway",
+        image: "/images/faith.jpg",
+        position: "Innovative blockchain developer pioneering secure, scalable, and decentralized solutions for the future.",
+    },
+    
+];
 
 export default function Team() {
     return (
@@ -14,8 +39,20 @@ export default function Team() {
         <h1 className='md:text-3xl text-2xl px-6 text-white md:max-w-200 text-center font-thin'>We are a fintech company comprised of members with expertise in banking, e-commerce, marketing, and technical spaces, with over 25 years of experience.</h1>
         </div>
       </div>
-            <div>
-                Team Members
+            <div className='grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mt-20'>
+                {teamMembers.map((member, index) => (
+                    <div key={index} className="border-2 p-6 rounded-lg">
+                        <Image
+                            src={member.image}
+                            alt={member.name}
+                            width={200}
+                            height={200}
+                            className="mx-auto rounded-full"
+                        />
+                        <p className="text-xl font-semibold mt-4">{member.name}</p>
+                        <p className="text-sm">{member.position}</p>
+                    </div>
+                ))}
             </div>
             <Choose />
             <MainFooter />
