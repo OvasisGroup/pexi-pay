@@ -312,6 +312,7 @@ export default function ContactPage() {
         </div>
       </div>
       <About />
+      <div className='-mt-10'></div>
       <MainFooter />
       <Footer />
     </section>
