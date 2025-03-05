@@ -138,7 +138,7 @@ export default function Services() {
             <div className='grid md:grid-cols-2 gap-6 max-w-7xl mx-auto mt-15 mb-20'>
                 {services.map((member, index) => (
                     <div key={index} className="border-1 p-6 rounded-lg mx-6 md:mx-0 hover:bg-mainblue transition-colors hover:text-white">
-                        <div className='flex md:flex-row flex-col gap-6 justify-between items-start' >
+                        <div className='flex flex-col gap-6 justify-between items-start' >
                             <div>
                                 <Image
                                     src={member.image}
@@ -151,7 +151,7 @@ export default function Services() {
                             </div>
                         </div>
                         <p className='text-sm'>{member.description.map((item, index) => (
-                            <div key={index} className='flex md:flex-row flex-col md:gap-2 border-b-1 py-2'>
+                            <div key={index} className='flex flex-col md:gap-2 border-b-1 py-2'>
                                 <p className='text-sm font-semibold'>{item.title}</p>
                                 <p className='text-sm'>{item.body}</p>
                             </div>
