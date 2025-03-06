@@ -3,10 +3,10 @@ import Image from "next/image";
 
 export default function CurrencyCarousel() {
     return (
-      <div className="relative max-w-7xl mx-auto overflow-hidden py-4 mt-5">
-        <div className="flex w-max animate-marquee">
+      <div className="relative max-w-7xl mx-auto overflow-hidden py-1 mt-5 bg-white border-r-1 border-l-1 border-mainblue rounded-xl">
+        <div className="flex w-max animate-marquee ">
         {/* Scrolling Wrapper */}
-        <div key={1} className="flex  space-x-10">
+        <div key={1} className="flex  space-x-10 bg-grey-300">
           {[
             "/images/visa.png",
             "/images/amex.png",
@@ -27,13 +27,13 @@ export default function CurrencyCarousel() {
           ].map((item, index) => (
             <div
               key={index}
-              className="text-white text-lg font-bold px-6 py-2 shadow-md flex flex-col items-center justify-center"
+              className="text-white text-lg font-bold  py-2 flex flex-col items-center justify-center"
             >
               <Image
                 src={item}
                 alt="image"
-                width={100}
-                height={100}
+                width={60}
+                height={60}
                 className=" flex mx-auto justify-center items-center"
               />
             </div>
