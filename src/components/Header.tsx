@@ -77,6 +77,8 @@ export default function Header() {
 
             className="absolute bottom-0 h-auto w-full" data-aos="fade-up"
           />
+          
+          
         </div>
       </div>
     </section>
