@@ -102,6 +102,11 @@ const teamMembers = [
         name: "Payment processing for igaming",
         description: "As a provider we take into consideration your verticals/risk industries and associated licenses. Keeping that in mind we have designated 24/7 customer support, instant escalated resolutions, multiple payment methods/multi currency support and a system designed to help you grow by offering a secure environment, and straight through  processing."
     },
+    {
+        image: "/images/icon-pexi.png",
+        name: "International Payments",
+        description: "Personal (Peer-to-Peer) Payments, Enterprise (B2B) Payments, Mass Payments, Merchant Solutions & FX Trading and Bulk FX."
+    },
 
 ];
 
