@@ -21,7 +21,8 @@ export default function Faq() {
         <NavigationBar/>
         <div className='relative w-full h-60 bg-[url("/images/faq.png")] bg-cover bg-center bg-no-repeat'>
         <div className='flex flex-col justify-center items-center h-full'>
-            <Link href={'/'}><p className='text-white'><span><IoHomeOutline size={20} className='text-white mb-4' /></span>/home/</p></Link>
+        <div className='flex flex-row gap-2'>
+        <Link href={'/'}><IoHomeOutline size={20} className='text-white mb-4' /></Link> <p className='text-white'> <Link href={'/'}>Home</Link> | <Link href={'/faq'} className='text-mainsecondary font-semibold'>Faqs</Link></p></div>
             <h1 className='font-bold text-white sm:text-3xl text-xl'>Frequently Asked Questions</h1>
         </div>
         </div>

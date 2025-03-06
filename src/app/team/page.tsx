@@ -4,6 +4,9 @@ import MainFooter from '@/components/MainFooter'
 import NavigationBar from '@/components/Navbar'
 import React from 'react'
 import Image from "next/image";
+import About from '@/components/About'
+import Link from 'next/link'
+import { IoHomeOutline } from 'react-icons/io5'
 
 const teamMembers = [
     {
@@ -39,6 +42,8 @@ export default function Team() {
             <NavigationBar />
             <div className='relative w-full h-100 bg-[url("/images/faq.png")] bg-cover bg-center bg-no-repeat'>
                 <div className='flex flex-col justify-center items-center h-full'>
+                <div className='flex flex-row gap-2'>
+                <Link href={'/'}><IoHomeOutline size={20} className='text-white mb-4' /></Link> <p className='text-white'> <Link href={'/'}>Home</Link> | <Link href={'/team'} className='text-mainsecondary font-semibold'>Team</Link></p></div>
                     <h1 className='font-bold text-mainsecondary md:text-4xl text-3xl mb-6'>Team</h1>
                     <h1 className='md:text-3xl text-2xl px-6 text-white md:max-w-200 text-center font-thin'>We are a fintech company comprised of members with expertise in banking, e-commerce, marketing, and technical spaces, with over 25 years of experience.</h1>
                 </div>
@@ -70,6 +75,8 @@ export default function Team() {
             </div>
             
             <Choose/>
+            <About />
+            <div className='-mt-10'></div>
             <MainFooter />
             <Footer />
         </section>
