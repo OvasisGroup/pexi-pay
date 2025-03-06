@@ -191,14 +191,8 @@ export default function ContactPage() {
       <NavigationBar />
       <div className="relative w-full h-60 bg-[url('/images/faq.png')] bg-cover bg-center bg-no-repeat">
         <div className="flex flex-col justify-center items-center h-full">
-          <Link href={"/"}>
-            <p className="text-white">
-              <span>
-                <IoHomeOutline size={20} className="text-white mb-4" />
-              </span>
-              /home/
-            </p>
-          </Link>
+        <div className='flex flex-row gap-2'>
+        <Link href={'/'}><IoHomeOutline size={20} className='text-white mb-4' /></Link> <p className='text-white'> <Link href={'/'}>Home</Link> | <Link href={'/contacts'} className='text-mainsecondary font-semibold'>Contact Us</Link></p></div>
           <h1 className="font-bold text-white sm:text-3xl text-xl">Contacts</h1>
         </div>
       </div>
@@ -231,9 +225,8 @@ export default function ContactPage() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder="Enter your name"
-                  className={`w-full px-4 py-2 bg-white border ${
-                    errors.name ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:border-maingreen`}
+                  className={`w-full px-4 py-2 bg-white border ${errors.name ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:border-maingreen`}
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">{errors.name}</p>
@@ -246,9 +239,8 @@ export default function ContactPage() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder="Enter your email address"
-                  className={`w-full px-4 py-2 bg-white border ${
-                    errors.email ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:border-maingreen`}
+                  className={`w-full px-4 py-2 bg-white border ${errors.email ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:border-maingreen`}
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">{errors.email}</p>
@@ -263,9 +255,8 @@ export default function ContactPage() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder="Enter your phone number"
-                  className={`w-full px-4 py-2 bg-white border ${
-                    errors.phone ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:border-maingreen`}
+                  className={`w-full px-4 py-2 bg-white border ${errors.phone ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:border-maingreen`}
                 />
                 {errors.phone && (
                   <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
@@ -278,9 +269,8 @@ export default function ContactPage() {
                   value={formData.company}
                   onChange={handleChange}
                   placeholder="Enter your company name"
-                  className={`w-full px-4 py-2 bg-white border ${
-                    errors.company ? "border-red-500" : "border-gray-300"
-                  } rounded-md focus:outline-none focus:border-maingreen`}
+                  className={`w-full px-4 py-2 bg-white border ${errors.company ? "border-red-500" : "border-gray-300"
+                    } rounded-md focus:outline-none focus:border-maingreen`}
                 />
                 {errors.company && (
                   <p className="text-red-500 text-sm mt-1">{errors.company}</p>
@@ -293,9 +283,8 @@ export default function ContactPage() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder="Enter your message"
-                className={`w-full px-4 py-2 bg-white border ${
-                  errors.message ? "border-red-500" : "border-gray-300"
-                } rounded-md focus:outline-none focus:border-maingreen`}
+                className={`w-full px-4 py-2 bg-white border ${errors.message ? "border-red-500" : "border-gray-300"
+                  } rounded-md focus:outline-none focus:border-maingreen`}
               />
               {errors.message && (
                 <p className="text-red-500 text-sm mt-1">{errors.message}</p>

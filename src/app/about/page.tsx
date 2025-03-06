@@ -5,6 +5,7 @@ import NavigationBar from '@/components/Navbar'
 import MainFooter from '@/components/MainFooter'
 import Footer from '@/components/Footer'
 import { Button } from "@/components/ui/button"
+import Subscription from '@/components/Subscription'
 
 export default function About() {
   return (
@@ -24,7 +25,7 @@ export default function About() {
    <p className='mb-0 md:mb-25'>We tap into modern payment methods that help your business grow. We help you accept global debit and credit card payments for all card brands and local payment methods. We are a fintech company comprised of members with expertise in banking, e-commerce, marketing, and technical spaces, with over 25 years of experience. We collaborate and have negotiated the best rates for you with mobile networks, banks, and money transfer operators, enabling you to collect and be settled seamlessly and flexibly. Every client receives a personal account manager who is available round-the-clock to connect you to our turnkey white-label solution.</p>
     </div>
    
-
+    <Subscription/>
     <MainFooter/>
     <Footer/>
     </section>

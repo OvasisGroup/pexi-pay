@@ -66,7 +66,7 @@ export default function Introduction() {
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 p-6 md:p-0'>
                 {teamMembers.map((member, index) => (
-                        <div key={index} className="bg-maingrey rounded-lg hover:bg-mainblue transition-colors hover:text-white flex flex-col justify-center items-center min-h-60 p-10 text-center">
+                        <div key={index} className="bg-maingrey  rounded-lg hover:rounded-4xl transition-all hover:bg-mainblue transition-colors hover:text-white flex flex-col justify-center items-center min-h-60 p-10 text-center">
                             <div>{member.image}</div>
                             <p className="  mt-4">{member.name}</p>
                         </div>
