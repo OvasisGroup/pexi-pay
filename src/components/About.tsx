@@ -27,7 +27,7 @@ export default function About() {
             </p>
             <div className="flex flex-col items-center md:flex md:items-start w-full mt-4">
               <Link href="/signin">
-                <Button className="bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded  sm:mx-0">
+                <Button className="font-bold cursor-pointer bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded  sm:mx-0">
                   Get Started
                 </Button>
               </Link>

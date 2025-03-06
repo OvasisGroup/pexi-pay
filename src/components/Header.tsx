@@ -63,7 +63,7 @@ export default function Header() {
           <h1 className='font.sans md:text-6xl text-4xl md:px-0 px-6 text-center md:text-left  font-bold text-white md:mb-6 mb-2' data-aos="fade-up">Boost your business with our premium payment solutions</h1>
           <p className='font.sans md:text-xl  text-white mb-6 md:text-left text-center px-6 md:p-0' data-aos="fade-up">Boost your sales and improve performance while we elevate your business to the next level.</p>
           <div className="flex flex-col items-center w-full md:flex md:items-start mt-2">
-          <Link href="signin"><Button className='bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded' data-aos="fade-up" >Get Started</Button></Link>
+          <Link href="signin"><Button className='font-bold cursor-pointer bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded' data-aos="fade-up" >Get Started</Button></Link>
           </div>
         </div>
         <div ref={sectionRef} className='flex justify-start items-bottom h-full relative hidden md:block'>
