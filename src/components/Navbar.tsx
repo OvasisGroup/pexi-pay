@@ -59,7 +59,7 @@ const NavigationBar = () => {
                         </Link>
 
                         <Link href="/signin" className="px-8 py-2 bg-maingreen text-mainyellow rounded-3xl hover:bg-mainyellow hover:text-maingreen font-bold">
-                            <Button className='bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-6 py-5 rounded  sm:mx-0' >Get Started</Button>
+                            <Button className='font-bold bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-6 py-5 rounded  sm:mx-0' >Get Started</Button>
                         </Link>
 
                     </div>
@@ -92,7 +92,7 @@ const NavigationBar = () => {
                     <Link href="/contacts" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         Contact Us
                     </Link>
-                    <Link href="/signin" className="block px-4 py-2 text-center bg-mainsecondary text-white rounded-lg hover:bg-red-700 mt-2">
+                    <Link href="/signin" className="font-bold block px-4 py-2 text-center bg-mainsecondary text-white rounded-lg hover:bg-red-700 mt-2">
                         Get Started
                     </Link>
 
