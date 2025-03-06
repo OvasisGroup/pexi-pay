@@ -42,9 +42,9 @@ const NavigationBar = () => {
                     <Link href="/" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
                             Home
                         </Link>
-                        <Link href="/payment_gateway" className="text-maingreen dark:text-white hover:text-mainsecondary">
+                        {/* <Link href="/payment_gateway" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             Payment Gateway
-                        </Link>
+                        </Link> */}
                         <Link href="/about" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             About
                         </Link>
@@ -77,9 +77,9 @@ const NavigationBar = () => {
                     <Link href="/payment_gateway" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         Home 
                     </Link>
-                    <Link href="/payment_gateway" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
+                    {/* <Link href="/payment_gateway" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         Payment Gateway
-                    </Link>
+                    </Link> */}
                     <Link href="/about" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         About
                     </Link>
