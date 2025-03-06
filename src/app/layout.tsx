@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Fira_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Fira_Sans({
+const geistSans = Poppins ({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
   variable: "--font-fira-sans",
 });

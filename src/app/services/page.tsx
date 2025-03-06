@@ -5,6 +5,8 @@ import NavigationBar from '@/components/Navbar'
 import React from 'react'
 import Image from "next/image";
 import About from '@/components/About'
+import { IoHomeOutline } from 'react-icons/io5'
+import Link from 'next/link'
 
 // const services = [
 //     {
@@ -109,6 +111,8 @@ export default function Services() {
             <NavigationBar />
             <div className='relative w-full h-100 bg-[url("/images/faq.png")] bg-cover bg-center bg-no-repeat'>
                 <div className='flex flex-col justify-center items-center h-full'>
+                <div className='flex flex-row gap-2'>
+              <Link href={'/'}><IoHomeOutline size={20} className='text-white mb-4' /></Link> <p className='text-white'> <Link href={'/'}>Home</Link> | <Link href={'/services'} className='text-mainsecondary font-semibold'>Services</Link></p></div>
                     <h1 className='font-bold text-mainsecondary md:text-4xl text-3xl mb-6'>Our Services</h1>
                     <h1 className='md:text-3xl text-2xl px-6 text-white md:max-w-200 text-center font-thin'>We tap into modern payment methods that help your business grow. We help you accept global debit and credit card payments for all card brands and local payment methods.</h1>
                 </div>

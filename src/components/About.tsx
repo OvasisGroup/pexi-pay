@@ -18,7 +18,7 @@ export default function About() {
             />
           </div>
           <div className="flex flex-col justify-center items-center text-white">
-            <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left  md:px-0 px-8 mb-4 mt-16">
+            <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left line-height-loose md:px-0 px-8 mb-4 mt-16">
               We tap into modern payment methods that help your business grow.
             </h1>
             <p className="p-6 text-center md:text-left md:p-0">
@@ -27,7 +27,7 @@ export default function About() {
             </p>
             <div className="flex flex-col items-center md:flex md:items-start w-full mt-4">
               <Link href="/signin">
-                <Button className="bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-6 py-5 rounded-full  sm:mx-0">
+                <Button className="bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded  sm:mx-0">
                   Get Started
                 </Button>
               </Link>

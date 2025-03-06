@@ -56,7 +56,7 @@ export default function Subscription() {
   };
 
   return (
-    <section className="max-w-7xl mx-auto bg-mainblue md:rounded-4xl">
+    <section className="max-w-7xl mx-auto bg-mainblue md:rounded-xl">
       <div className="pt-20 md:pt-0">
         <div className="flex flex-col-reverse md:grid md:grid-cols-2 gap-4">
           <div>
@@ -65,7 +65,7 @@ export default function Subscription() {
               alt="image"
               width={1000}
               height={100}
-              className="md:-mt-20 mt-15 px-10 md:px-0"
+              className="md:-mt-20 mt-15 px-10 md:px-10"
             />
           </div>
           <div className="flex flex-col justify-center items-start gap-4 md:px-16 px-6">
@@ -79,12 +79,12 @@ export default function Subscription() {
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 required
-                className="w-full px-4 py-2 bg-white border border-gray-300 rounded-md focus:outline-none focus:border-maingreen"
+                className="w-full px-4 py-2 bg-white border border-gray-300 rounded focus:outline-none focus:border-maingreen"
               />
               <button
                 type="submit"
                 disabled={isLoading}
-                className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded-md text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full px-4 py-2 border bg-mainsecondary border-mainsecondary rounded text-white font-bold hover:bg-red-700 focus:outline-none focus:border-mainsecodnary cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isLoading ? "Subscribing..." : "Subscribe"}
               </button>

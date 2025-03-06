@@ -60,15 +60,15 @@ export default function Introduction() {
         <div className="max-w-7xl mx-auto my-12">
             <div className='flex-cols gap-y-10 gap-x-8 py-16 md:grid'>
                 <div className='flex flex-col justify-center items-center md:items-start text-center md:text-left'>
-                    <small className='text-mainsecondary font-bold text-xl'>PEXIPAY KEY FEATURES</small>
-                    <h1 className='font-bold text-mainblue text-4xl my-3 px-6 md:px-0'>We deliver outstanding results while streamlining your processes.</h1>
+                    <p className='text-mainsecondary font-semibold'>PEXIPAY KEY FEATURES</p>
+                    <h1 className='font-bold text-mainblue text-4xl my-1 px-6 md:px-0'>We deliver outstanding results while streamlining your processes.</h1>
                     <p className='px-6 md:px-0'>We deliver outstanding results while streamlining your processes. Our goal is to maximize efficiency and ensure you achieve the best outcomes with minimal effort and expense.</p>
                 </div>
                 <div className='grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-4 p-6 md:p-0'>
                 {teamMembers.map((member, index) => (
                         <div key={index} className="bg-maingrey rounded-lg hover:bg-mainblue transition-colors hover:text-white flex flex-col justify-center items-center min-h-60 p-10 text-center">
                             <div>{member.image}</div>
-                            <p className="text-xl font-semibold mt-4">{member.name}</p>
+                            <p className="  mt-4">{member.name}</p>
                         </div>
                     ))}
                 </div>

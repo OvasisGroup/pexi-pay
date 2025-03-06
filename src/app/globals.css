@@ -6,7 +6,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: "Fira Sans", sans-serif;
+  --font-sans: "Poppins", sans-serif;
   --color-mainprimary: #050123;
   --color-mainsecondary: #ff0000;
   --color-mainaccent: #340CD1;
