@@ -11,7 +11,6 @@ export default function MainFooter() {
         </div>
         <div>
             <ul className='flex flex-row gap-4 text-mainblue md:items-end md:justify-end'>
-                <li><Link href={'/payment_gateway'}>Gateway</Link></li>
                 <li><Link href={'/faq'}>FAQs</Link></li>
                 <li><Link href={'/about'}>About</Link></li>
                 <li><Link href={'/contacts'}>Contact</Link></li>              

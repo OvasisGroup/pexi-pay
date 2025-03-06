@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Choose() {
   return (
     <section className='max-w-7xl mx-auto mt-10 mb-10 md:mb-20'>
-    <div className='grid grid-cols-2 gap-6 sm:grid-cols-4 px-6 sm:px-0 py-10'>
+    <div className='grid grid-cols-2 gap-6 md:grid-cols-4 px-6 md:px-0 py-10'>
         <div className='p-6 border-2 rounded-2xl'>
             <Image src="/images/picone.jpg" alt="image" width={90} height={100} className='bg-black mb-4' />
             <h1 className='font-bold text-mainsecondary sm:text-2xl text-xl'>User friendly API</h1>
