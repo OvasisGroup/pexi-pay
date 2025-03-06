@@ -28,14 +28,15 @@ export default function Footer() {
           >
             Terms & Conditions
           </Link>
-          <FaLinkedin
+          <Link href={'https://www.linkedin.com/company/pexilabs'}><FaLinkedin
             size={24}
             className="text-mainblue hover:text-mainsecondary transition-colors cursor-pointer"
-          />
-          <FaSquareTwitter
-            size={24}
-            className="text-mainblue hover:text-mainsecondary transition-colors cursor-pointer"
-          />
+          /></Link>
+          <Link href={'https://x.com/PexiLabs'}>
+            <FaSquareTwitter
+              size={24}
+              className="text-mainblue hover:text-mainsecondary transition-colors cursor-pointer"
+            /></Link>
         </div>
       </div>
     </section>

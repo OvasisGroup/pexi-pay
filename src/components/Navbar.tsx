@@ -42,19 +42,19 @@ const NavigationBar = () => {
                     <Link href="/" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
                             Home
                         </Link>
-                        <Link href="/payment_gateway" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                        <Link href="/payment_gateway" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             Payment Gateway
                         </Link>
-                        <Link href="/about" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                        <Link href="/about" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             About
                         </Link>
-                        <Link href="/services" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                        <Link href="/services" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             Services
                         </Link>
-                        <Link href="/team" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                        <Link href="/team" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             Team
                         </Link>
-                        <Link href="/contacts" className="text-maingreen dark:text-white hover:text-mainsecondary font-semibold">
+                        <Link href="/contacts" className="text-maingreen dark:text-white hover:text-mainsecondary ">
                             Contact Us
                         </Link>
 
