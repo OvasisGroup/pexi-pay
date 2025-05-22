@@ -18,7 +18,7 @@ export default function About() {
               <Link href={'/'}><IoHomeOutline size={20} className='text-white mb-4' /></Link> <p className='text-white'> <Link href={'/'}>Home</Link> | <Link href={'/about'} className='text-mainsecondary font-semibold'>About Us</Link></p></div>
             <h1 className='font-bold text-mainsecondary sm:text-3xl text-xl'>About PexiPay</h1>
             <h1 className='font-light md:text-3xl text-xl md:font-normal font-semibold text-white mb-6 md:max-w-200 text-center md:px-0 px-8'>We collaborate and have negotiated the best rates for you with mobile networks, banks, and money transfer operators, enabling you to collect and be settled seamlessly and flexibly. </h1>
-            <Link href="signin"><Button className='bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded  md:mx-0 mt-2 cursor-pointer' >Get Started</Button></Link>
+            <Link href="https://app.pexipay.com"><Button className='bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-10 py-6 rounded  md:mx-0 mt-2 cursor-pointer' >Get Started</Button></Link>
         </div>
         </div>
        

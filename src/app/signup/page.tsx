@@ -61,7 +61,7 @@ export default function Signup() {
             Thank you for your interest. We're working on something amazing!
           </p>
           <Link
-            href="/signin"
+            href="https://app.pexipay.com"
             className="mt-4 inline-block px-6 py-2 bg-mainsecondary text-white rounded-md hover:bg-red-700 transition-colors"
           >
             Back to Sign In
