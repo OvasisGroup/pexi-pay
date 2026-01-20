@@ -58,7 +58,7 @@ const NavigationBar = () => {
                             Contact Us
                         </Link>
 
-                        <Link href="https://app.pexipay.com" className="px-8 py-2 bg-maingreen text-mainyellow rounded-3xl hover:bg-mainyellow hover:text-maingreen font-bold">
+                        <Link href="https://gateway.pexipay.com/login" className="px-8 py-2 bg-maingreen text-mainyellow rounded-3xl hover:bg-mainyellow hover:text-maingreen font-bold">
                             <Button className='font-bold bg-red-500 text-white border-red-500 hover:bg-red-800 hover:text-white px-6 py-5 rounded  sm:mx-0 cursor-pointer' >Get Started</Button>
                         </Link>
 
