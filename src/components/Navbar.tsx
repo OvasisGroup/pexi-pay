@@ -51,9 +51,6 @@ const NavigationBar = () => {
                         <Link href="/services" className="text-maingreen dark:text-white hover:text-mainsecondary">
                             Services
                         </Link>
-                        <Link href="/team" className="text-maingreen dark:text-white hover:text-mainsecondary">
-                            Team
-                        </Link>
                         <Link href="/contacts" className="text-maingreen dark:text-white hover:text-mainsecondary ">
                             Contact Us
                         </Link>
@@ -86,13 +83,10 @@ const NavigationBar = () => {
                     <Link href="/services" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         Services
                     </Link>
-                    <Link href="/team" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
-                        Team
-                    </Link>
                     <Link href="/contacts" className="block text-gray-800 dark:text-white hover:text-mainsecondary font-semibold">
                         Contact Us
                     </Link>
-                    <Link href="/signin" className="font-bold block px-4 py-2 text-center bg-mainsecondary text-white rounded-lg hover:bg-red-700 mt-2">
+                    <Link href="https://gateway.pexipay.com/login" className="font-bold block px-4 py-2 text-center bg-mainsecondary text-white rounded-lg hover:bg-red-700 mt-2">
                         Get Started
                     </Link>
 

@@ -73,7 +73,7 @@ export default function Introduction() {
                         </div>
                     ))}
                     <div className="bg-mainblue rounded-lg hover:rounded-4xl transition-all hover:text-white flex flex-col justify-end items-center min-h-60 p-10 text-center hidden md:block">
-                        <Link href="https://app.pexipay.com" className='w-full'>
+                        <Link href="https://gateway.pexipay.com/login" className='w-full'>
                             <p className='bg-mainsecondary w-full text-white py-4 px-10 rounded-xl font-bold hover:bg-red-700 cursor-pointer hidden md:block'>Get Started &rarr;</p>
                         </Link>
                     </div>
